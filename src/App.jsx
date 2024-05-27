@@ -6,6 +6,7 @@ import About from './components/About'
 import Header from './components/Header'
 import Home from './components/Home'
 import Footer from './components/Footer'
+import ContactForm from './components/Contacto'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/item/:id' element= {<ItemDetailContainer/>}/>
           <Route path ='/sets'element = {<ItemListContainer/>}/>
           <Route path='/about' element= {<About/>}/>
+          <Route path='/contacto' element= {<ContactForm/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

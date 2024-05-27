@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import carrito from "./carrito-de-compras.png"
+import carrito from "../assets/carrito-de-compras.png";
 
 const CartWidget = () =>{
     return(

@@ -1,7 +1,18 @@
+import { useContext, useState } from "react";
 import ItemCount from "./ItemCount"
 
-
 const ItemDetail = ({item}) => {
+
+    const [cantidad, setCantidad] = useState(1);
+
+    const handleRestar = () => {
+        cantidad > 1 && setCantidad(cantidad - 1)
+    }
+
+    const handleSumar = () => {
+        cantidad < item.stock && setCantidad(cantidad + 1)
+    }
+
     return (
         <div className="productodetalle">
             <img className="img" src={item.img} alt={item.title} />
