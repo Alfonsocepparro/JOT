@@ -1,0 +1,253 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Chloe'; 
+  src: url('../fonts/Chloe-Regular.otf') format('otf'); 
+}
+#root{
+  align-items: center;
+  justify-content: center;
+}
+html{
+  height: 1vh;
+}
+body{
+  width: 100%;
+  background-color: #D4CAC0;
+}
+/*HEADER*/
+header{
+  background-color: #BBA99E;
+  height: 600px;
+  background-image: url(../src/assets/backHead.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  justify-content: space-between;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  align-items: center;
+}
+.menu{
+  display: flex;
+  list-style: none;
+  color: #ffffff;
+  font-family: Chloe;
+  text-decoration: none;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+.menu-link{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 3rem;
+}
+.navbar{
+  display: flex;
+  background-color: #BBA99E;
+  justify-content: space-around;
+  width: 100%;
+}
+.menu-link:hover {
+  text-decoration: underline #ffffff;
+}
+.contenedor-nav {
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  height: 100px;
+}
+.contenedor-nav > button{
+  border: none;
+  background-color: #BBA99E;
+}
+.carrito {
+  width: 50px;
+  height: 50px;
+}
+/*HOME*/
+.jotmain-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px; 
+  height: 350px;
+  margin-left: 37%;
+}
+
+.jotmain {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.cardContainermain{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 100px 0 100px;
+  margin-top: 45px;
+}
+.imgCard{
+  width: 300px;
+  height: 350px;
+}
+
+section h2{
+  text-align: center;
+  font-size: 3.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 30px;
+}
+.inicio a{
+  text-decoration: none;
+  color: #ffffff;
+  width: 100px;
+}
+section h2:hover{
+  text-decoration: underline #ffffff;
+}
+.banner{
+  background-color: #BBA99E;
+  width: 100%;
+  margin: 50px 0 80px 0;
+  justify-content: center;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+.banner img{
+  height: 40px;
+  width: 40px;
+}
+.banner p{
+  color: #ffffff;
+  font-family: Belleza;
+  font-size: 2.5rem;
+  margin-left: 15px;
+}
+/*FOOOOOOOOOOOTER*/
+footer{
+  background-color: #BBA99E;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+footer div img{
+  margin-top: 15px;
+}
+.text{
+  font-family: Belleza;
+  padding-bottom: 20px;
+}
+.redes > h3{
+  color: #ffffff;
+  font-family: Belleza;
+  font-size: 1.8rem;
+  margin-top: 15px;
+}
+/*PRODUCTOS*/
+.container{
+  height: 1300px;
+  flex-wrap: wrap;
+}
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 15px;
+  padding-block: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.producto{
+  border: none;
+  height: 500px;
+  background-color: #BBA99E;
+}
+
+.producto > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  padding: 10px;
+}
+.info{
+  font-size: 1.5rem;
+  font-family: Belleza;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 8px;
+  gap: 7px;
+}
+.ver-mas{
+  height: 50px;
+  width: 150px;
+  font-size: 2rem;
+  border-radius: 10%;
+  border: none;
+  background-color: #cdc1b9;
+  font-family: Belleza;
+  align-items : center;
+  margin-top: 30px;
+}
+.ver-mas > a{
+  color: black;
+}
+.ver-mas:hover{
+  background-color: #BBA99E;
+  
+}
+.ver-mas > a:hover{
+  color: #ffffff;
+}
+
+/*PRODUCTO DETALLE*/
+.productodetalle{
+  border: none;
+  height: 450px;
+  display: flex;
+  background-color: #BBA99E;
+  margin: 30px 100px 30px 100px;
+}
+.productodetalle > img {
+  width: 400px;
+  height: 400px;
+  padding: 30px;
+}
+.precio{
+  font-size: 3rem;
+}
+
+.item-count{
+  display: flex;
+  gap: 10px;
+}
+.item-count > button{
+  font-size: 1.5rem;
+  border: none;
+  width: 50px;
+  border-radius: 15%;
+  color: #ffffff;
+  font-family: Belleza;
+  background-color: #cdc1b9;
+}
+
+.agregarcarrito{
+  width: 200px;
+  font-family: Belleza;
+  color: #ffffff;
+  border: none;
+  border-radius: 15%;
+  font-size: 1.5rem;
+  background-color: #cdc1b9;
+}
+.item-count > button, .agregarcarrito:hover{
+  background-color: #BBA99E;
+}
