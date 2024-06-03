@@ -252,6 +252,8 @@ footer div img{
 .agregar-al-carrito, .enviar {
   width: auto;
   height: auto;
+  font-family: Belleza;
+  font-size: 1.3rem;
   margin-top: 1rem;
   padding: 1rem;
 }
@@ -346,5 +348,53 @@ footer div img{
 .ver-mas > a:hover, .submit-button:hover{
   color: #ffffff;
 }
-
-
+/*              CARRITO                        */
+.numerito{
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+button a{
+  text-decoration: none;
+}
+.container{
+  height: auto;
+  margin: 40px 40px 0 40px;
+}
+.prodCarrito{
+  margin: 40px;
+  padding-left: 25px;
+  border: dotted 4px #988a81;
+  font-family: Belleza;
+}
+.prodCarrito > h3{
+  font-size: 2.3rem;
+  text-decoration: underline solid 1.5px;
+}
+.infoCarrito{
+  display: flex;
+  gap: 35px;
+  padding: 10px;
+}
+.infoCarrito > p{
+  font-size: 1.5rem;
+  font-family: Belleza;
+  font-weight: bold;
+}
+.main-title, .preciototal{
+  font-family: Chloe;
+  font-size: 2.6rem;
+}
+.carritoV{
+  margin-top: 40px;
+}
+.botones{
+  display: flex;
+  gap: 20px;
+}
+.botones > button{
+  background-color: #BBA99E;
+}
+.botones > button > a{
+  color: #ffffff;
+}

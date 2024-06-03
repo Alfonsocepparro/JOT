@@ -7,21 +7,28 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Footer from './components/Footer'
 import ContactForm from './components/Contacto'
+import { CartProvider } from './context/CartContext'
+import Carrito from './components/Carrito'
+import ScrollToTop from './assets/ScrollTop'
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Header/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/item/:id' element= {<ItemDetailContainer/>}/>
-          <Route path ='/sets'element = {<ItemListContainer/>}/>
-          <Route path='/about' element= {<About/>}/>
-          <Route path='/contacto' element= {<ContactForm/>}/>
-        </Routes>
-        <Footer/>
-      </BrowserRouter>
+      <CartProvider>
+        <BrowserRouter>
+          <ScrollToTop />
+          <Header/>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/item/:id' element= {<ItemDetailContainer/>}/>
+            <Route path ='/sets'element = {<ItemListContainer/>}/>
+            <Route path='/about' element= {<About/>}/>
+            <Route path='/contacto' element= {<ContactForm/>}/>
+            <Route path='/carrito' element= {<Carrito/>}/>
+          </Routes>
+          <Footer/>
+        </BrowserRouter>
+      </CartProvider>
     </div>
   )
 }
