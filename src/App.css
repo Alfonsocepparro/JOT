@@ -349,52 +349,277 @@ footer div img{
   color: #ffffff;
 }
 /*              CARRITO                        */
-.numerito{
+.numerito {
   font-size: 2rem;
   text-decoration: none;
   color: #ffffff;
 }
-button a{
+
+button a {
   text-decoration: none;
 }
-.container{
+
+.container {
   height: auto;
   margin: 40px 40px 0 40px;
 }
-.prodCarrito{
+
+.prodCarrito {
   margin: 40px;
   padding-left: 25px;
   border: dotted 4px #988a81;
   font-family: Belleza;
 }
-.prodCarrito > h3{
+
+.prodCarrito > h3 {
   font-size: 2.3rem;
   text-decoration: underline solid 1.5px;
 }
-.infoCarrito{
+
+.infoCarrito {
   display: flex;
-  gap: 35px;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
 }
-.infoCarrito > p{
+
+.infoCarrito > p {
   font-size: 1.5rem;
   font-family: Belleza;
   font-weight: bold;
 }
-.main-title, .preciototal{
+
+.main-title, .preciototal {
   font-family: Chloe;
   font-size: 2.6rem;
 }
-.carritoV{
+
+.carritoV {
   margin-top: 40px;
 }
-.botones{
+
+.botones {
   display: flex;
   gap: 20px;
 }
-.botones > button{
+
+.botones > button {
   background-color: #BBA99E;
 }
-.botones > button > a{
+
+.botones > button > a {
   color: #ffffff;
 }
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+/*                 CHECKOUT               */
+
+/* MEDIA QUERIES */
+@media (max-width: 320px) {
+  /* HEADER */
+  header {
+    height: 300px;
+    background-size: cover;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-link {
+    font-size: 1.5rem;
+  }
+
+  .contenedor-nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .carrito {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* HOME */
+  .cardContainermain {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .imgCard {
+    width: 100%;
+    height: auto;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  /* PRODUCTOS */
+  .productos {
+    grid-template-columns: 1fr;
+    padding-block: 1rem;
+  }
+
+  .producto {
+    width: 100%;
+    height: auto;
+  }
+
+  .producto > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+
+  /* PRODUCTO DETALLE */
+  .productodetalle {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .productodetalle > img {
+    width: 90%;
+    height: auto;
+  }
+
+  .precio {
+    font-size: 2rem;
+  }
+  .agregar-al-carrito{
+    display: flex;
+    justify-content: center;
+  }
+  .item-count {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .item-count button, .agregar-al-carrito, .enviar {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* CARRITO */
+  .container {
+    margin: 20px 10px;
+  }
+
+  .prodCarrito {
+    margin: 20px 10px;
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .prodCarrito > h3 {
+    font-size: 1.5rem;
+  }
+
+  .infoCarrito {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .infoCarrito > p {
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+  }
+
+  .main-title, .preciototal {
+    font-size: 1.5rem;
+  }
+
+  .botones {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .botones > button {
+    width: 100%;
+  }
+
+  .carritoV {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* FOOTER */
+  .futer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .futer img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .redes > h3 {
+    font-size: 1.2rem;
+  }
+
+  /* BANNER */
+  .banner {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .banner img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .banner p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  /* ABOUT */
+  .about {
+    margin-bottom: 20px; 
+  }
+
+  .text {
+    color: #ffffff;
+    font-family: Belleza;
+    font-size: 1rem;
+    padding: 15px 20px;
+    text-align: center;
+  }
+}
+

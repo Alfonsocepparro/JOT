@@ -2,13 +2,16 @@ import { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
 import '../App.css';
 import { Link } from "react-router-dom";
-
+import tachito from "../assets/contenedor-de-basura.png"
 const Carrito = () => {
 
-    const { carrito, precioTotal, vaciarCarrito } = useContext(CartContext);
+    const { carrito, precioTotal, vaciarCarrito, eliminarProducto } = useContext(CartContext);
 
     const handleVaciar = () => {
         vaciarCarrito();
+    }
+    const handleEliminarProducto = (id) => {
+        eliminarProducto(id);
     }
 
     return (
@@ -24,10 +27,15 @@ const Carrito = () => {
                         <p>Cant: {prod.cantidad}</p>
                         <p>Precio unit: ${prod.precio}</p>
                         <p>Precio total: ${prod.precio * prod.cantidad}</p>
+                        <img className='logo' src={tachito} alt="tachito" 
+                                onClick={() => handleEliminarProducto(prod.id)} 
+                                style={{ cursor: 'pointer' }}
+                            />
                     </div>
                     <br />
                 </div>  
             ))
+            
         }
 
         {  
@@ -36,7 +44,9 @@ const Carrito = () => {
                 <h2 className='preciototal'>Precio total: ${precioTotal()}</h2>
                 <div className='botones'>
                     <button className="agregar-al-carrito" onClick={handleVaciar}>Vaciar carrito</button>
-                    <button className="agregar-al-carrito">Terminar compra</button>
+                    <button className="agregar-al-carrito">
+                        <Link to= '/checkout'>Terminar compra</Link>
+                    </button>
                     <button className="agregar-al-carrito"><Link to='/sets'>Volver a Sets</Link></button>
                 </div>
             </> :

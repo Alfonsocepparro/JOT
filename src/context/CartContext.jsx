@@ -34,6 +34,9 @@ export const CartProvider = ({children}) => {
     const vaciarCarrito = () => {
         setCarrito([]);
     }
+    const eliminarProducto = (id) => {
+        setCarrito(carrito.filter(prod => prod.id !== id));
+    }
 
     useEffect(() => {
         localStorage.setItem("carrito", JSON.stringify(carrito));
@@ -46,7 +49,8 @@ export const CartProvider = ({children}) => {
             agregarAlCarrito,
             cantidadEnCarrito,
             precioTotal,
-            vaciarCarrito
+            vaciarCarrito, 
+            eliminarProducto
         } }>
             {children}
         </CartContext.Provider>
