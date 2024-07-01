@@ -139,7 +139,6 @@ footer div img{
 }
 .text{
   font-family: Belleza;
-  padding-bottom: 20px;
 }
 .redes > h3{
   color: #ffffff;
@@ -285,7 +284,7 @@ footer div img{
   color: #ffffff;
   font-family: Belleza;
   font-size: 2rem;
-  padding: 25px 60px;
+  padding: 25px 50px;
 }
 /*             CONTACTO            */
 .contact-form {
@@ -307,14 +306,9 @@ footer div img{
 .form-group {
   margin-bottom: 15px;
 }
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  font-family: Belleza;
+.form-group input{
+  margin: 20px 0 ;;
 }
-
 .form-group input,
 .form-group textarea {
   width: 100%;
@@ -418,7 +412,15 @@ button a {
   margin-bottom: 10px;
 }
 /*                 CHECKOUT               */
-
+.checkout > h1{
+  text-align: center;
+  margin: 25px;
+}
+.npedido{
+  font-family: Belleza;
+  text-align: center;
+  font-size: 2rem;
+}
 /* MEDIA QUERIES */
 @media (max-width: 320px) {
   /* HEADER */
@@ -453,6 +455,10 @@ button a {
   }
 
   .imgCard {
+    width: 100%;
+    height: auto;
+  }
+  .imgjot{
     width: 100%;
     height: auto;
   }

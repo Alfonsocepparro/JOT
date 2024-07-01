@@ -1,4 +1,4 @@
-
+import wasap from '../assets/whatsapp.png';
 import insta from '../assets/insta.png';
 
 const Footer = () => {
@@ -13,6 +13,7 @@ const Footer = () => {
                     <h3>CONTACTANOS</h3>
                     <div className="contact-details">
                         <div className="contact-item">
+                        <a href=""><img src={wasap} alt="wasap" /></a>
                             <span className="text">get your set here</span>
                         </div>
                         <div className="contact-item">

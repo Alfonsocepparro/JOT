@@ -10,6 +10,7 @@ import ContactForm from './components/Contacto'
 import { CartProvider } from './context/CartContext'
 import Carrito from './components/Carrito'
 import ScrollToTop from './assets/ScrollTop'
+import Checkout from './components/Checkout'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path='/about' element= {<About/>}/>
             <Route path='/contacto' element= {<ContactForm/>}/>
             <Route path='/carrito' element= {<Carrito/>}/>
+            <Route path='/checkout' element= {<Checkout/>}/>
           </Routes>
           <Footer/>
         </BrowserRouter>
